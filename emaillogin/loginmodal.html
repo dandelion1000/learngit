@@ -1,0 +1,58 @@
+<div ui-view style="text-align: center">
+   <h3>GO,begin your AngularJS </h3>
+    <!--div>
+    <button type="button" class="btn btn-default">默认按钮</button>
+    <button type="button" class="btn btn-primary">原始按钮</button>
+    <button type="button" class="btn btn-success">成功按钮</button>
+    <button type="button" class="btn btn-info">信息按钮</button>
+    <button type="button" class="btn btn-warning">警告按钮</button>
+
+    <button type="button" class="btn btn-danger">危险按钮</button>
+    <button type="button" class="btn btn-link">链接按钮</button>
+    </div-->
+
+ <div id="content" class="bg-color-white">
+
+  <div widget-grid id="widget-grid" class="user-list">
+   <div class="row">
+    <article class="col-sm-12">
+     <div jarvis-widget id="standard-datatable-widget" data-widget-color="darken"
+          data-widget-editbutton="false">
+       <div class="widget-body no-padding">
+        <div class="alert alert-info col-sm-12">
+         <button class="close" data-dismiss="alert">×</button>
+         共<b>{{totalItemNum}}</b>条数据，本页显示1-20条
+        </div>
+        <table class="table table-hover tablerecord">
+         <thead>
+         <tr>
+          <th>序</th>
+          <th>用户</th>
+          <th>操作时间</th>
+          <th>操作详情</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr data-ng-repeat="recordData in recordDatas">
+          <td>{{$index+1}}</td>
+          <td>{{recordData.username}}</td>
+          <td>{{recordData.operatetime}}</td>
+          <td>{{recordData.operatetdetails}}</td>
+         </tr>
+         </tbody>
+        </table>
+       </div>
+     </div>
+    </article>
+   </div>
+  </div>
+ </div>
+ <!--查看图表-->
+  <!--canvas id="line" class="chart chart-line" chart-data="data" style="border: 1px solid"
+          chart-labels="labels" chart-series="series" chart-options="options"
+          chart-dataset-override="datasetOverride" chart-click="onClick">
+  </canvas-->
+
+
+
+</div>
