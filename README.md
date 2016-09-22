@@ -1,2 +1,2 @@
-# learngit
+learngit
 about email login
